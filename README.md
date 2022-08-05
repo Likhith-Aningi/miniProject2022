@@ -1,2 +1,2 @@
 # miniProject2022
-This is about OCR conversion with python ml
+This is about Stock_price_prediction with python ml
