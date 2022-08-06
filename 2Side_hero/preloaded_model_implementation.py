@@ -189,7 +189,7 @@ real_data=np.reshape(real_data,(real_data.shape[0],real_data.shape[1],1))
 prediction = model.predict(real_data)
 prediction = scaler.inverse_transform(prediction)
 print(f"Prediction : {prediction}")
-window['-result-'].update(f'Predicted stock Price of {company}: {" Rs. "+str(prediction[0])[1:7]}')
+window['-result-'].update(f'Predicted stock Price of {company}: {" USD "+str(prediction[0])[1:7]}')
 while True:
 	event,values=window.read()
 	
